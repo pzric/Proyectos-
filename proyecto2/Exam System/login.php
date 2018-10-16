@@ -16,7 +16,7 @@
       <label> Contraseña</label><br>
       <p><input type="password" class="caja1" id="contraseña" placeholder="Contraseña"></p>
     </div>
-      <br><p><button type="submit" class="bot">Iniciar Sección</button></p>
-  </form>
+      <p><button type="submit" class="bot">Iniciar Sección</button></p>
+    </form>
   </body>
 </html>

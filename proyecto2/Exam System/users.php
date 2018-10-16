@@ -3,21 +3,14 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/estilo3.css">
     <title></title>
   </head>
   <body>
-    <div class="row">
-        <div class="col-md-3">
-          <p>
-            <?php //include 'partes/agregar.php'?>
-         </p>
-        </div>
-        <div class="col-md-9">
-          <p>
-
-         </p>
-       </div>
-    </div>
-  </div>
+    <h1>Usuarios</h1>
+    <form action="agregar.php">
+      <button class="bot2" type="submit" name="submit-register">Añadir usuario</button>
+    </form><br><br>
+    <?php include 'partes/usuario.php'; ?>
   </body>
 </html>
