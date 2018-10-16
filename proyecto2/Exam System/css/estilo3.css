@@ -1,15 +1,26 @@
-.caja1 {
+input {
   font-family: sans-serif;
   font-size: 20px;
   font-weight:400;
   color: #black;
   width:300px;
-  height: 50px;
+  height: 25px;
   background-color: #bdc3c7;
   border: 0;
 
 }
-.bot{
+select {
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight:400;
+  color: #black;
+  width:250px;
+  height: 25px;
+  background-color: #bdc3c7;
+  border: 0;
+
+}
+.bot1{
     width:200px;
     height:40px;
     font-weight: 600;
@@ -23,17 +34,3 @@
    color: #ffffff;
    background-color: #74b9ff;
  }
-form{
-  width:30%;
-  background:#ecf0f1;
-  margin:110px;
-  padding:30px;
-  border-radius:10px;
-  border:2px solid #ecf0f1;
-}
-label{
-    font-size:40px;
-}
-body{
-  background:#bdc3c7;
-}

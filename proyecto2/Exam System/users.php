@@ -6,6 +6,18 @@
     <title></title>
   </head>
   <body>
-    <h1>Usuarios</h1>
+    <div class="row">
+        <div class="col-md-3">
+          <p>
+            <?php //include 'partes/agregar.php'?>
+         </p>
+        </div>
+        <div class="col-md-9">
+          <p>
+
+         </p>
+       </div>
+    </div>
+  </div>
   </body>
 </html>
