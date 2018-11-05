@@ -9,7 +9,7 @@
   <body>
     <h1>Usuarios</h1>
     <form action="agregar.php">
-      <button class="bot2" type="submit" name="submit-register">Añadir usuario</button>
+      <button class="bot2" type="submit" name="submit-register">Agregar</button>
     </form><br><br>
     <?php include 'partes/usuario.php'; ?>
   </body>

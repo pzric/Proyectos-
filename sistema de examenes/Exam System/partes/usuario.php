@@ -1,17 +1,18 @@
 <center><br>
 <?php
-include 'partes/conexion.php';
-$result=mysqli_query($link,"select * from usuarios");
+require("connect_db.php");
+$sql=("SELECT * FROM usuarios");
+$query=mysqli_query($mysqli,$sql);
 echo "<table border=+3 width=70%>";
 echo "<th>Nombre";
 echo "<th>Apellido paterno";
 echo "<th>Apellido materno";
 echo "<th>Fecha de nacimineto";
 echo "<th>Correo";
-echo "<th>Rol<tr>";
-
-while ($extraido=mysqli_fetch_array($result))
-{
+echo "<th>Rol";
+echo "<td>";
+echo "<td><tr>";
+while ($extraido=mysqli_fetch_array($query)){
   echo "<td>",$extraido['nombre'];
   echo "<td>",$extraido['apellido1'];
   echo "<td>",$extraido['apellido2'];
@@ -23,8 +24,18 @@ while ($extraido=mysqli_fetch_array($result))
   if ($extraido['rol']==0) {
     echo "<td>Alumno";
   }
-  echo "<th><a href=''>MODIFICAR</a><tr>";
+  echo "<td><a href='modificar.php?id=$extraido[id]'><img src='img/modificar.png' high=20 width=20>";
+  echo "<td><a href='partes/usuario.php?id=$extraido[id]&idborrar=2'><img src='img/eliminar.png' high=20 width=20>";
   echo "</tr>";
-}
+  }
 echo "</table>";
-?></CENTER>
+
+extract($_GET);
+if(@$idborrar==2){
+  $sqlborrar="DELETE FROM usuarios WHERE id=$id";
+	$resborrar=mysqli_query($mysqli,$sqlborrar);
+	echo '<script>alert("REGISTRO ELIMINADO")</script>';
+	echo "<script>location.href='../usuarios.php'</script>";
+}
+?>
+</CENTER>

@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="css/estilo2.css">
   </head>
   <body><center>
-    <form action="">
+    <form action="partes/validar.php" method="post">
     <div class="form-group">
       <label>Usuario</label>
-      <p><input type="text" class="caja1" id="usuario" placeholder="Usuario"></p>
+      <p><input type="text" class="caja1" name="user" placeholder="Usuario"></p>
     </div>
     <div class="form-group">
       <label> Contraseña</label><br>
-      <p><input type="password" class="caja1" id="contraseña" placeholder="Contraseña"></p>
+      <p><input type="password" class="caja1" name="password" placeholder="Contraseña"></p>
     </div>
       <p><button type="submit" class="bot">Iniciar Sección</button></p>
     </form>
