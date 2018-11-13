@@ -3,6 +3,7 @@
 if (@!$_SESSION['user']) {
 	header("Location:login.php");
 }
+extract($_GET);
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -12,10 +13,10 @@ if (@!$_SESSION['user']) {
     <title></title>
   </head>
   <body>
-    <h1>Usuarios</h1>
-    <form action="agregar.php">
-      <button class="bot2" type="submit" name="submit-register">Agregar</button>
+    <h1>Preguntas de: <?php echo $id2?></h1>
+
     </form><br><br>
-    <?php include 'partes/usuario.php' ?>
+    <?php echo "<a href='agregarp.php?id=$id2'><img class='icono' src='img/agregar.jpg' high=40 width=40></a>";
+     include 'partes/preguntas.php'?>
   </body>
 </html>

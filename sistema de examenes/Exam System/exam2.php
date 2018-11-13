@@ -12,10 +12,10 @@ if (@!$_SESSION['user']) {
     <title></title>
   </head>
   <body>
-    <h1>Usuarios</h1>
-    <form action="agregar.php">
-      <button class="bot2" type="submit" name="submit-register">Agregar</button>
-    </form><br><br>
-    <?php include 'partes/usuario.php' ?>
-  </body>
+    <h1>Examenes</h1>
+    <form action="agregarexm.php">
+      <button class="bot3" type="submit" name="submit-register">Crear</button>
+    </form><br><br><br>
+    <?php include 'partes/examenes2.php'; ?>
+ </body>
 </html>

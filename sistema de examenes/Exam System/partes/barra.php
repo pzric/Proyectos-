@@ -43,7 +43,7 @@ if ($_SESSION['rol']==0) {
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link navbar-brand" href="exam.php">Examenes<span class="sr-only"></span></a>
+          <a class="nav-link navbar-brand" href="exam2.php">Examenes<span class="sr-only"></span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link navbar-brand" href="result.php">Resultados<span class="sr-only"></span></a>

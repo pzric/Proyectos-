@@ -25,7 +25,7 @@ while ($row=mysqli_fetch_row($ressql)){
     <title></title>
   </head>
   <body><center>
-    <form class="cua" method="POST" action="partes/actualizarb.php">
+    <form class="cua" method="post" action="partes/actualizarb.php">
 
       <table>
         <tr>
@@ -35,9 +35,9 @@ while ($row=mysqli_fetch_row($ressql)){
         </tr>
         <tr>
           <input class="invi" type="text" name="id" value="<?php echo $id ?>">
-          <td><input type="text" name="nombre" value="<?php echo $nom ?>"></td>
-          <td><input type="text" name="apellido1" value="<?php echo $ape1 ?>"></td>
-          <td><input type="text" name="apellido2" value="<?php echo $ape2 ?>"></td>
+          <td><input type="text" name="nom" value="<?php echo $nom ?>"></td>
+          <td><input type="text" name="ape1" value="<?php echo $ape1 ?>"></td>
+          <td><input type="text" name="ape2" value="<?php echo $ape2 ?>"></td>
         </tr>
         <tr>
           <td><label>Fecha de nacimiento</label></td>
@@ -45,8 +45,8 @@ while ($row=mysqli_fetch_row($ressql)){
           <td></td>
         </tr>
         <tr>
-          <td><input type="date" name="fecha" value="<?php echo $fec ?>"></td>
-          <td><input type="text" name="correo" value="<?php echo $cor ?>"></td>
+          <td><input type="date" name="fec" value="<?php echo $fec ?>"></td>
+          <td><input type="text" name="cor" value="<?php echo $cor ?>"></td>
           <td></td>
         </tr>
         <tr>
@@ -56,7 +56,7 @@ while ($row=mysqli_fetch_row($ressql)){
         </tr>
         <tr>
           <td><input type="text" name="user" value="<?php echo $user ?>"></td>
-          <td><input type="password" name="password" value="<?php echo $cont ?>"></td>
+          <td><input type="password" name="cont" value="<?php echo $cont ?>"></td>
           <td><select name="rol">
             <option value="1">Maestro</option>
             <option value="0">Alumno</option>
