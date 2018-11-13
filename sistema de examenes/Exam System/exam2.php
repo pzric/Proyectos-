@@ -13,9 +13,6 @@ if (@!$_SESSION['user']) {
   </head>
   <body>
     <h1>Examenes</h1>
-    <form action="agregarexm.php">
-      <button class="bot3" type="submit" name="submit-register">Crear</button>
-    </form><br><br><br>
     <?php include 'partes/examenes2.php'; ?>
  </body>
 </html>
